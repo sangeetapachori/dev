@@ -1,0 +1,19 @@
+[
+  {
+    "id": "toy-001",
+    "title": "Amigurumi Bunny",
+    "description": "Soft pastel bunny with bow",
+    "category": "toys",
+    "type": "image",
+    "src": "/media/images/toys/bunny.jpg",
+    "tags": ["amigurumi", "pastel"]
+  },
+  {
+    "id": "toy-002",
+    "title": "Dino Rattle",
+    "category": "toys",
+    "type": "video",
+    "src": "/media/videos/toys/dino-rattle.mp4",
+    "thumbnail": "/media/images/toys/dino-thumb.jpg"
+  }
+]

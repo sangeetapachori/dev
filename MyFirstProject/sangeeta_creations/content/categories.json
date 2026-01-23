@@ -1,0 +1,8 @@
+[
+  { "slug": "toys", "title": "Toys", "description": "Handmade crochet toys", "cover": "/media/images/Image (3).jpg" },
+  { "slug": "clothes", "title": "Clothes", "description": "Warm, cozy crochet wear","cover": "/media/images/Image (3).jpg" },
+  { "slug": "decorative", "title": "Decorative", "description": "Home décor pieces" ,"cover": "/media/images/Image (3).jpg"},
+  { "slug": "bags", "title": "Bags", "description": "Stylish crochet bags","cover": "/media/images/Image (3).jpg" },
+  { "slug": "mobile-covers", "title": "Mobile Covers", "description": "Protective & pretty" },
+  { "slug": "customized", "title": "Customized", "description": "Made-to-order designs" }
+]
