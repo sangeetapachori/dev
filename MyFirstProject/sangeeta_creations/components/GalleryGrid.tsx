@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import VideoPlayer from "./VideoPlayer";
-import Lightbox from "./Lightbox";
 import type { MediaItem } from "@/lib/types";
 import clsx from "clsx";
 
@@ -42,7 +41,7 @@ export default function GalleryGrid({ items }: { items: MediaItem[] }) {
         ))}
       </div>
 
-      <Lightbox item={active} onClose={() => setActive(null)} />
+     
     </>
   );
 }
