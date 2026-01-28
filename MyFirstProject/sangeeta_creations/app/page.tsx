@@ -32,9 +32,8 @@ export default async function HomePage() {
                   alt={cat.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                  sizes="(max-width: 64px) 100vw, (max-width: 64px) 50vw, 33vw" />
               ) : (
-
                 <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                   <span className="text-gray-400">No Image</span>
                 </div>
