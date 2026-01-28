@@ -23,7 +23,9 @@ Toys, clothes, décor, bags, mobile covers, and custom items.</p>
         {categories.map(cat => (
           <Link key={cat.slug} href={`/gallery/${cat.slug}`} className="group rounded-lg overflow-hidden border bg-white">
             {cat.cover && (
-              <Image src={cat.cover} alt={cat.title} className="h-48 w-full object-cover" />
+              <Image src={cat.cover} alt={cat.title} fill
+        className="object-cover group-hover:scale-105 transition-transform duration-300"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             )}
             <div className="p-4">
               <h2 className="text-xl font-medium group-hover:underline">{cat.title}</h2>
