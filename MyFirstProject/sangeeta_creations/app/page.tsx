@@ -19,20 +19,22 @@ export default async function HomePage() {
           Toys, clothes, décor, bags, mobile covers, and custom items.</p>
       </header>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {categories.map(cat => (
           <Link
             key={cat.slug}
             href={`/gallery/${cat.slug}`}
-            className="group block rounded-lg overflow-hidden border bg-white h-full">
-            <div className="relative w-full aspect-[4/3] overflow-hidden">
+            className="group block rounded-lg overflow-hidden border bg-white h-full hover:shadow-lg transition-all"
+    >
+            <div className="relative h-64 w-full overflow-hidden">
               {cat.cover ? (
                 <Image
                   src={cat.cover}
                   alt={cat.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 64px) 100vw, (max-width: 64px) 50vw, 33vw" />
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+          // PERFORMANCE: This tells Next.js to resize the large original to a smaller version
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               ) : (
                 <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                   <span className="text-gray-400">No Image</span>
