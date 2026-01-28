@@ -34,7 +34,7 @@ export default async function HomePage() {
                   fill
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
           // PERFORMANCE: This tells Next.js to resize the large original to a smaller version
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"></Image>
               ) : (
                 <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                   <span className="text-gray-400">No Image</span>
